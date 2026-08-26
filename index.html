@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nebil Hosni | Medical Services</title>
+
+    <meta name="description"
+          content="Nebil Hosni Medical Services - Professional, reliable and patient-centered healthcare services.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f9fb;
+            color: #18324a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #063b63, #087f8c);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            background: white;
+            padding: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 46px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.95;
+        }
+
+        .tagline {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #075b78;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0aa6a6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #063b63;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .intro {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #526979;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            border-top: 4px solid #087f8c;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+
+        .card .icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #063b63;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #637785;
+        }
+
+        .mission {
+            background: linear-gradient(135deg, #063b63, #087f8c);
+            color: white;
+            border-radius: 20px;
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .mission h2 {
+            color: white;
+        }
+
+        .mission p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 19px;
+        }
+
+        .contact {
+            text-align: center;
+            background: white;
+            padding: 45px 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+        }
+
+        .contact p {
+            margin: 10px 0;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #087f8c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #063b63;
+        }
+
+        footer {
+            background: #062c46;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 34px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px 8px;
+            }
+
+            .container {
+                padding: 50px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- Replace logo.png with your logo file later -->
+    <div class="logo"
+         style="display:flex;align-items:center;justify-content:center;
+                color:#063b63;font-size:28px;font-weight:bold;">
+        NH
+    </div>
+
+    <h1>NEBIL HOSNI</h1>
+
+    <p>Medical Services & Healthcare</p>
+
+    <div class="tagline">
+        Professional • Reliable • Patient-Centered
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#mission">Mission</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main class="container">
+
+    <section id="about">
+        <h2>About</h2>
+
+        <p class="intro">
+            Nebil Hosni provides professional medical services with a
+            focus on quality, reliability and personalized patient care.
+            Our approach is centered around professionalism, trust and
+            patient-centered support.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <div class="icon">🩺</div>
+                <h3>Medical Consultation</h3>
+                <p>
+                    Professional medical consultation and patient support.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">❤️</div>
+                <h3>Patient Care</h3>
+                <p>
+                    Personalized care focused on patient needs and well-being.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏥</div>
+                <h3>Medical Services</h3>
+                <p>
+                    Professional healthcare services delivered with care
+                    and reliability.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📋</div>
+                <h3>Health Assessment</h3>
+                <p>
+                    Patient assessment and healthcare guidance.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💊</div>
+                <h3>Medical Guidance</h3>
+                <p>
+                    Clear and responsible medical guidance and support.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🤝</div>
+                <h3>Patient Support</h3>
+                <p>
+                    Personalized assistance with a professional approach.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="mission">
+        <div class="mission">
+
+            <h2>Our Mission</h2>
+
+            <p>
+                To provide reliable, professional and patient-centered
+                medical services while maintaining high standards of
+                care, trust and professionalism.
+            </p>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Focus</h2>
+
+        <p class="intro">
+            Our commitment is to deliver healthcare support with
+            professionalism, respect, reliability and a patient-first
+            approach.
+        </p>
+    </section>
+
+    <section id="contact">
+        <div class="contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                <strong>Nebil Hosni</strong>
+            </p>
+
+            <p>
+                Medical Services & Healthcare
+            </p>
+
+            <p>
+                📧 nebil.hosni@ctkcp.com.tn
+            </p>
+
+            <a class="button"
+               href="mailto:nebil.hosni@ctkcp.com.tn">
+                Contact Us
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p><strong>NEBIL HOSNI</strong></p>
+    <p>Medical Services & Healthcare</p>
+    <p>© 2026 Nebil Hosni. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
