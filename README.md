@@ -1,52 +1,49 @@
-# NEBIL HOSNI
+# 🩺 NEBIL HOSNI
 
 ### Medical Services & Healthcare
 
 **Professional Medical Services • Patient Care • Healthcare Support**
 
-Providing professional, reliable and patient-centered medical services.
+Providing reliable, professional and patient-centered medical services.
 
 ---
 
 ## 🏥 About
 
-Nebil Hosni provides professional medical services focused on quality, reliability and personalized patient care.
+Nebil Hosni provides professional medical services with a focus on **quality, reliability and personalized patient care**.
 
-Our approach is centered around professionalism, trust and delivering a high standard of service to every patient.
+Our approach combines professionalism, trust and patient-centered support to provide a high standard of healthcare service.
 
 ---
 
 ## 🩺 Our Services
 
-### 🩺 Medical Consultation
-
-Professional medical consultation and patient support.
-
-### ❤️ Patient Care
-
-Personalized care focused on patient needs and well-being.
-
-### 🔬 Medical Services
-
-Professional healthcare services delivered with care and reliability.
-
-### 📋 Health Assessment
-
-Patient assessment and professional healthcare guidance.
-
-### 💊 Medical Guidance
-
-Clear and responsible medical guidance and support.
-
-### 🤝 Personalized Support
-
-Patient-centered assistance with a professional approach.
+| Service                     | Description                                                           |
+| --------------------------- | --------------------------------------------------------------------- |
+| 🩺 **Medical Consultation** | Professional medical consultation and patient support.                |
+| ❤️ **Patient Care**         | Personalized care focused on patient needs and well-being.            |
+| 🔬 **Medical Services**     | Professional healthcare services delivered with care and reliability. |
+| 📋 **Health Assessment**    | Patient assessment and healthcare guidance.                           |
+| 💊 **Medical Guidance**     | Clear and responsible medical guidance and support.                   |
+| 🤝 **Patient Support**      | Personalized assistance with a professional approach.                 |
 
 ---
 
 ## 🎯 Our Mission
 
-To provide reliable, professional and patient-centered medical services while maintaining high standards of care, trust and professionalism.
+> To provide reliable, professional and patient-centered medical services while maintaining high standards of care, trust and professionalism.
+
+---
+
+## ⭐ Professional Focus
+
+* 🏥 Healthcare Services
+* 🩺 Medical Consultation
+* ❤️ Patient Care
+* 📋 Health Assessment
+* 💊 Medical Guidance
+* 🤝 Patient Support
+* 🌍 Professional Medical Services
 
 ---
 
@@ -63,21 +60,18 @@ To provide reliable, professional and patient-centered medical services while ma
 
 For professional inquiries:
 
-📧 **[nebil.hosni@ctkcp.com.tn](mailto:nebil.hosni@ctkcp.com.tn)**
+**📧 [nebil.hosni@ctkcp.com.tn](mailto:nebil.hosni@ctkcp.com.tn)**
 
 ---
 
-## ⭐ Professional Focus
+## 🤝 Professional Commitment
 
-* 🏥 Healthcare Services
-* 🩺 Medical Consultation
-* ❤️ Patient Care
-* 📋 Health Assessment
-* 🤝 Patient Support
-* 🌍 Professional Medical Services
+We are committed to providing dependable healthcare services with professionalism, respect and a patient-first approach.
 
 ---
 
-### © Nebil Hosni
+### NEBIL HOSNI
 
 **Medical Services • Healthcare • Patient Care**
+
+© 2026 Nebil Hosni
