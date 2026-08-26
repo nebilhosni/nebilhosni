@@ -4,370 +4,731 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nebil Hosni | Medical Services</title>
+    <title>Nebil Hosni | Medical Services & Healthcare</title>
 
     <meta name="description"
-          content="Nebil Hosni Medical Services - Professional, reliable and patient-centered healthcare services.">
+          content="Nebil Hosni provides professional, reliable and patient-centered medical services and healthcare support.">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f5f9fb;
-            color: #18324a;
+            background: #f4f8fb;
+            color: #16324f;
             line-height: 1.6;
         }
 
+        /* =========================
+           HEADER
+        ========================= */
+
         header {
-            background: linear-gradient(135deg, #063b63, #087f8c);
-            color: white;
-            padding: 70px 20px;
+            min-height: 470px;
+            padding: 60px 20px 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #063b63 0%,
+                    #086b82 55%,
+                    #078c8c 100%
+                );
+
+            color: white;
         }
 
-        .logo {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
+        .logo-container {
+            width: 135px;
+            height: 135px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             background: white;
-            padding: 8px;
-            margin-bottom: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 50%;
+
+            margin-bottom: 30px;
+
+            box-shadow:
+                0 12px 35px rgba(0, 0, 0, 0.20);
+        }
+
+        .logo-container img {
+            width: 105px;
+            height: 105px;
+            object-fit: contain;
         }
 
         header h1 {
-            font-size: 46px;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            font-weight: 800;
         }
 
         header p {
-            font-size: 20px;
-            opacity: 0.95;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
         }
 
         .tagline {
-            margin-top: 15px;
             font-size: 16px;
+            opacity: 0.95;
+            letter-spacing: 1px;
         }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         nav {
             background: white;
-            padding: 18px;
-            text-align: center;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 42px;
+
+            padding: 20px;
+
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
 
         nav a {
-            color: #075b78;
+            color: #075578;
             text-decoration: none;
-            margin: 0 18px;
-            font-weight: bold;
+            font-weight: 700;
+            font-size: 16px;
+
+            transition: 0.25s;
         }
 
         nav a:hover {
-            color: #0aa6a6;
+            color: #079393;
+            transform: translateY(-2px);
         }
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 70px 20px;
-        }
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
 
         section {
-            margin-bottom: 60px;
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 25px;
         }
 
-        h2 {
+        .section-title {
             text-align: center;
+            font-size: 36px;
             color: #063b63;
-            font-size: 32px;
-            margin-bottom: 35px;
+            margin-bottom: 20px;
         }
 
-        .intro {
+        .section-line {
+            width: 70px;
+            height: 4px;
+            background: #079393;
+            margin: 0 auto 45px;
+            border-radius: 10px;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-text {
             max-width: 850px;
             margin: auto;
+
             text-align: center;
+
             font-size: 18px;
-            color: #526979;
+            color: #476176;
         }
 
-        .services {
+        .about-text p {
+            margin-bottom: 18px;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        #services {
+            background: #f4f8fb;
+        }
+
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
             gap: 25px;
         }
 
-        .card {
+        .service-card {
             background: white;
-            padding: 30px;
+
+            padding: 35px 30px;
+
             border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-            border-top: 4px solid #087f8c;
+
+            border-top:
+                4px solid #078c8c;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.08);
+
+            transition:
+                transform 0.25s,
+                box-shadow 0.25s;
         }
 
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        .service-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.13);
         }
 
-        .card .icon {
-            font-size: 38px;
-            margin-bottom: 15px;
+        .service-icon {
+            font-size: 42px;
+            margin-bottom: 20px;
         }
 
-        .card h3 {
+        .service-card h3 {
             color: #063b63;
-            margin-bottom: 10px;
             font-size: 21px;
+            margin-bottom: 12px;
         }
 
-        .card p {
-            color: #637785;
+        .service-card p {
+            color: #617487;
+            font-size: 15px;
         }
 
-        .mission {
-            background: linear-gradient(135deg, #063b63, #087f8c);
-            color: white;
-            border-radius: 20px;
-            padding: 50px 30px;
-            text-align: center;
-        }
+        /* =========================
+           MISSION
+        ========================= */
 
-        .mission h2 {
-            color: white;
-        }
-
-        .mission p {
-            max-width: 800px;
-            margin: auto;
-            font-size: 19px;
-        }
-
-        .contact {
-            text-align: center;
+        #mission {
             background: white;
-            padding: 45px 25px;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
         }
 
-        .contact p {
-            margin: 10px 0;
-            font-size: 17px;
-        }
+        .mission-box {
+            max-width: 850px;
+            margin: auto;
 
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 14px 28px;
-            background: #087f8c;
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #063b63,
+                    #087d88
+                );
+
             color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
+
+            padding: 50px 40px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.12);
         }
 
-        .button:hover {
-            background: #063b63;
+        .mission-box h3 {
+            font-size: 28px;
+            margin-bottom: 18px;
         }
+
+        .mission-box p {
+            font-size: 17px;
+            opacity: 0.95;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-card {
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-card h3 {
+            color: #063b63;
+            margin-bottom: 18px;
+            font-size: 23px;
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+            color: #526b7e;
+        }
+
+        .contact-item strong {
+            color: #063b63;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
-            background: #062c46;
+            background: #063b63;
             color: white;
+
             text-align: center;
-            padding: 30px 20px;
+
+            padding: 35px 20px;
+        }
+
+        footer h3 {
+            font-size: 22px;
+            margin-bottom: 8px;
         }
 
         footer p {
-            margin: 5px 0;
+            font-size: 14px;
+            opacity: 0.85;
         }
 
-        @media (max-width: 700px) {
+        .footer-line {
+            width: 50px;
+            height: 3px;
+            background: #079393;
+            margin: 15px auto;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            header {
+                min-height: 430px;
+            }
+
             header h1 {
-                font-size: 34px;
+                font-size: 35px;
             }
 
             header p {
-                font-size: 17px;
+                font-size: 18px;
+            }
+
+            nav {
+                gap: 18px;
+                flex-wrap: wrap;
+                padding: 15px;
             }
 
             nav a {
-                display: inline-block;
-                margin: 6px 8px;
+                font-size: 14px;
             }
 
-            .container {
-                padding: 50px 15px;
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 60px 20px;
             }
         }
+
     </style>
 </head>
 
 <body>
 
-<header>
-    <!-- Replace logo.png with your logo file later -->
-    <div class="logo"
-         style="display:flex;align-items:center;justify-content:center;
-                color:#063b63;font-size:28px;font-weight:bold;">
-        NH
-    </div>
+    <!-- =========================
+         HEADER
+    ========================= -->
 
-    <h1>NEBIL HOSNI</h1>
+    <header>
 
-    <p>Medical Services & Healthcare</p>
+        <div class="logo-container">
 
-    <div class="tagline">
-        Professional • Reliable • Patient-Centered
-    </div>
-</header>
+            <img
+                src="logo.png"
+                alt="Nebil Hosni Logo"
+            >
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#mission">Mission</a>
-    <a href="#contact">Contact</a>
-</nav>
+        </div>
 
-<main class="container">
+        <h1>NEBIL HOSNI</h1>
+
+        <p>Medical Services &amp; Healthcare</p>
+
+        <div class="tagline">
+            Professional • Reliable • Patient-Centered
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#services">
+            Services
+        </a>
+
+        <a href="#mission">
+            Mission
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
 
     <section id="about">
-        <h2>About</h2>
 
-        <p class="intro">
-            Nebil Hosni provides professional medical services with a
-            focus on quality, reliability and personalized patient care.
-            Our approach is centered around professionalism, trust and
-            patient-centered support.
-        </p>
+        <h2 class="section-title">
+            About
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="about-text">
+
+            <p>
+                Nebil Hosni provides professional medical services
+                with a focus on quality, reliability and personalized
+                patient care.
+            </p>
+
+            <p>
+                Our approach is centered around professionalism,
+                trust and patient-centered support to provide a
+                high standard of healthcare service.
+            </p>
+
+        </div>
+
     </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================= -->
 
     <section id="services">
-        <h2>Our Services</h2>
 
-        <div class="services">
+        <h2 class="section-title">
+            Our Services
+        </h2>
 
-            <div class="card">
-                <div class="icon">🩺</div>
-                <h3>Medical Consultation</h3>
+        <div class="section-line"></div>
+
+        <div class="services-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🩺
+                </div>
+
+                <h3>
+                    Medical Consultation
+                </h3>
+
                 <p>
-                    Professional medical consultation and patient support.
+                    Professional medical consultation
+                    and patient support focused on
+                    individual needs.
                 </p>
+
             </div>
 
-            <div class="card">
-                <div class="icon">❤️</div>
-                <h3>Patient Care</h3>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Patient Care
+                </h3>
+
                 <p>
-                    Personalized care focused on patient needs and well-being.
+                    Personalized care focused on
+                    patient needs, comfort and
+                    overall well-being.
                 </p>
+
             </div>
 
-            <div class="card">
-                <div class="icon">🏥</div>
-                <h3>Medical Services</h3>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🏥
+                </div>
+
+                <h3>
+                    Medical Services
+                </h3>
+
                 <p>
-                    Professional healthcare services delivered with care
-                    and reliability.
+                    Professional healthcare services
+                    designed around quality, reliability
+                    and patient support.
                 </p>
+
             </div>
 
-            <div class="card">
-                <div class="icon">📋</div>
-                <h3>Health Assessment</h3>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📋
+                </div>
+
+                <h3>
+                    Healthcare Support
+                </h3>
+
                 <p>
-                    Patient assessment and healthcare guidance.
+                    Reliable healthcare support with
+                    a professional and patient-centered
+                    approach.
                 </p>
+
             </div>
 
-            <div class="card">
-                <div class="icon">💊</div>
-                <h3>Medical Guidance</h3>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔍
+                </div>
+
+                <h3>
+                    Health Guidance
+                </h3>
+
                 <p>
-                    Clear and responsible medical guidance and support.
+                    Clear and professional guidance
+                    to help patients better understand
+                    their healthcare needs.
                 </p>
+
             </div>
 
-            <div class="card">
-                <div class="icon">🤝</div>
-                <h3>Patient Support</h3>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Personalized Support
+                </h3>
+
                 <p>
-                    Personalized assistance with a professional approach.
+                    Compassionate and individualized
+                    support built around trust and
+                    professional care.
                 </p>
+
             </div>
 
         </div>
+
     </section>
+
+
+    <!-- =========================
+         MISSION
+    ========================= -->
 
     <section id="mission">
-        <div class="mission">
 
-            <h2>Our Mission</h2>
+        <h2 class="section-title">
+            Our Mission
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="mission-box">
+
+            <h3>
+                Professional Care. Trusted Support.
+            </h3>
 
             <p>
-                To provide reliable, professional and patient-centered
-                medical services while maintaining high standards of
-                care, trust and professionalism.
+                Our mission is to provide reliable,
+                professional and patient-centered
+                healthcare services while maintaining
+                the highest standards of care,
+                communication and trust.
             </p>
 
         </div>
+
     </section>
 
-    <section>
-        <h2>Professional Focus</h2>
 
-        <p class="intro">
-            Our commitment is to deliver healthcare support with
-            professionalism, respect, reliability and a patient-first
-            approach.
-        </p>
-    </section>
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
     <section id="contact">
-        <div class="contact">
 
-            <h2>Contact</h2>
+        <h2 class="section-title">
+            Contact
+        </h2>
 
-            <p>
-                <strong>Nebil Hosni</strong>
-            </p>
+        <div class="section-line"></div>
 
-            <p>
-                Medical Services & Healthcare
-            </p>
+        <div class="contact-container">
 
-            <p>
-                📧 nebil.hosni@ctkcp.com.tn
-            </p>
 
-            <a class="button"
-               href="mailto:nebil.hosni@ctkcp.com.tn">
-                Contact Us
-            </a>
+            <div class="contact-card">
+
+                <h3>
+                    Get in Touch
+                </h3>
+
+                <div class="contact-item">
+                    <strong>Professional:</strong>
+                    Medical Services &amp; Healthcare
+                </div>
+
+                <div class="contact-item">
+                    <strong>Location:</strong>
+                    United States
+                </div>
+
+                <div class="contact-item">
+                    <strong>Support:</strong>
+                    Patient-centered healthcare assistance
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Why Choose Us?
+                </h3>
+
+                <div class="contact-item">
+                    ✓ Professional approach
+                </div>
+
+                <div class="contact-item">
+                    ✓ Reliable service
+                </div>
+
+                <div class="contact-item">
+                    ✓ Patient-centered care
+                </div>
+
+                <div class="contact-item">
+                    ✓ Personalized support
+                </div>
+
+            </div>
+
 
         </div>
+
     </section>
 
-</main>
 
-<footer>
-    <p><strong>NEBIL HOSNI</strong></p>
-    <p>Medical Services & Healthcare</p>
-    <p>© 2026 Nebil Hosni. All rights reserved.</p>
-</footer>
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <h3>
+            NEBIL HOSNI
+        </h3>
+
+        <div class="footer-line"></div>
+
+        <p>
+            Medical Services &amp; Healthcare
+        </p>
+
+        <p>
+            Professional • Reliable • Patient-Centered
+        </p>
+
+        <p style="margin-top:15px;">
+            © 2026 Nebil Hosni. All rights reserved.
+        </p>
+
+    </footer>
+
 
 </body>
 </html>
